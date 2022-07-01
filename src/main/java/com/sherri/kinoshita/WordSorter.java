@@ -1,11 +1,13 @@
 package com.sherri.kinoshita;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class WordSorter {
     public Map<Character, Integer> mapGivenLetters(String input) {
         Map<Character, Integer> letterMap = new HashMap<>();
+        input = input.toUpperCase();
 
         if (input.length() <= 7) {
             for (int i = 0; i < input.length(); i++) {
